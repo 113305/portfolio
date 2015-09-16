@@ -1,0 +1,20 @@
+<html>
+<head>
+
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <center>
+        <% if @gender =="male" %>
+          <a href ="/home/fun"><img src="http://protfolio-a113305.c9.io/<%= @mtype%>.jpg" width=390px height=270px></a>
+          <a href ="/home/fun"><h3><%= @name%>'s type is <%=@mtype%></h3></a>
+        <% else %>
+          <a href ="/home/fun"><img src="http://protfolio-a113305.c9.io/<%=@ftype%>.jpg" width=390px height=270px></a>
+          <a href ="/home/fun"><h3><%= @name%>'s type is <%=@ftype%></h3></a>
+        <%end%>
+    </div>
+  </div>    
+</body>
+</center>
+</html>
